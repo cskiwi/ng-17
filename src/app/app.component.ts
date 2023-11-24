@@ -9,8 +9,9 @@ import { NavigationComponent } from './navigation/navigation.component';
   imports: [CommonModule, RouterOutlet, NavigationComponent],
   styleUrls: ['./app.component.scss'],
   template: `
-    <app-navigation></app-navigation>
-    <router-outlet></router-outlet>
+    <app-navigation>
+      <router-outlet></router-outlet>
+    </app-navigation>
   `,
 })
 export class AppComponent {
